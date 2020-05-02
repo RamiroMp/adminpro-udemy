@@ -1,1 +1,42 @@
-<p>graficas1 works!</p>
+<div class="row">
+
+
+    <div class="col-6" *ngFor="let grafico of graficos">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{grafico.leyenda}}</h5>
+
+                <app-grafico-dona [etiqueta]="grafico.labels" [datos]="grafico.data" [tipo]="grafico.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{graficos.grafico2.leyenda}}</h5>
+
+                <app-grafico-dona [etiqueta]="graficos.grafico2.labels" [datos]="graficos.grafico2.data" [tipo]="graficos.grafico2.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{graficos.grafico3.leyenda}}</h5>
+
+                <app-grafico-dona [etiqueta]="graficos.grafico3.labels" [datos]="graficos.grafico3.data" [tipo]="graficos.grafico3.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center">{{graficos.grafico4.leyenda}}</h5>
+
+                <app-grafico-dona [etiqueta]="graficos.grafico4.labels" [datos]="graficos.grafico4.data" [tipo]="graficos.grafico4.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>-->
+
+</div>
